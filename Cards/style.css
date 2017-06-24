@@ -1,0 +1,13 @@
+body{
+	font-family: verdana;
+}
+
+.img{
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+}
+
+.footer{
+	background: #AEB6BF;
+}

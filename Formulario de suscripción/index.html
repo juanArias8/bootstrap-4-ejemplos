@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>navbarColor</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Stilos css -->
+    <style>
+      body{
+        background: #1C2833;
+      }
+      .fondo1{
+        height: 90vh;
+        background: #AEB6BF;
+        overflow-y: auto;
+      }
+      .bg-content1{
+        background: #5D6D7E;
+        transition: all 1s ease;
+      }
+      .footer{
+        background: #5D6D7E;
+        padding: 2%;
+      }
+      .btnHover:hover{
+        cursor: pointer;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Acá comienza el nav -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-content1 sticky-top" id="menu">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <a class="navbar-brand" href="#">
+          <img src="img/brand.png" width="150" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <div class="navbar-nav px-2">
+            <a class="nav-item nav-link active" href="#inicio">Inicio </a>
+            <a class="nav-item nav-link" href="#contenido">Contenido</a>
+            <a class="nav-item nav-link" href="#footer">Acerca</a>
+          </div>
+          <div class="d-flex flex-row justify-content-center ml-auto">
+           <form method="post" class="form-inline justify-content-center flex-column flex-md-row">
+              <div class="form-group">
+                <input type="email" class="form-control " placeholder="email">
+              </div>
+              <div class="form-group mx-2">
+                <input type="password" class="form-control" placeholder="contraseña">
+              </div>
+              <div class="form-group mx-2">
+                <button class="btn btn-primary btnHover" type="submit">Ingresar</button>
+              </div>
+            </form> 
+          </div>
+        </div>
+    </nav>
+    <!-- Acá termina el nav -->
+
+    <!-- Acá empieza el contenido -->
+    <section id="contenido" class=" container fondo1 align-items-center">
+      <div class="row ">
+
+        <!-- Acá empieza el formulario de suscripción 
+        Crearlo usando mailRelay
+        Tutorial ==> https://www.youtube.com/watch?v=fUbKhvBrEyc&list=PLPl81lqbj-4IcaAluUlCTmbYz0h9XQ8U1&index=29#t=6.050114 -->
+        <div class="col-sm-12 col-md-4 p-2 my-5">
+          <h2 class="text-center">Sucríbete aquí</h2>
+          <hr class="hr">
+          <div class="d-flex justify-content-center">
+            <form method="post" class="text-center" enctype="" action="" >
+              <input type="hidden" value="" name="groups[]">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Ingrese su nombre" name="name" id="name" value="" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Ingrese su email" name="email" id="email" value="" required>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btnHover" value="Enviar" id="submit" name="submit">
+              </div>
+              <input type="hidden" name="successUrl" value="" id="successUrl">
+            </form>
+          </div>
+        </div>
+        <!-- Acá termina el formulario de suscripción -->
+
+        <!-- Acá empieza el contenido de texto -->
+        <div class="col-sm-12 col-md-8 p-2 my-5">
+          <h2 class="h2 text-center">Algo por acá...</h2>
+          <hr class="hr">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto assumenda consequatur culpa vero, quibusdam sapiente dicta? Ea alias, ullam amet ab perferendis molestias repudiandae praesentium nulla accusamus doloribus qui nisi.
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto assumenda consequatur culpa vero, quibusdam sapiente dicta? Ea alias, ullam amet ab perferendis molestias repudiandae praesentium nulla accusamus doloribus qui nisi.
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto assumenda consequatur culpa vero, quibusdam sapiente dicta? Ea alias, ullam amet ab perferendis molestias repudiandae praesentium nulla accusamus doloribus qui nisi.
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto assumenda consequatur culpa vero, quibusdam sapiente dicta? Ea alias, ullam amet ab perferendis molestias repudiandae praesentium nulla accusamus doloribus qui nisi.
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto assumenda consequatur culpa vero, quibusdam sapiente dicta? Ea alias, ullam amet ab perferendis molestias repudiandae praesentium nulla accusamus doloribus qui nisi.
+          </p>
+        </div>
+        <!-- Acá termina el contenido de texto -->
+
+      </div>
+    </section>
+    <!-- Acá termina el contenido -->
+
+
+    <!-- Acá empieza el footer -->
+    <footer id="footer" class="footer text-center">
+      <p class="lead"><strong>Hecho por: </strong> Juan David Arias</p>
+    </footer>
+    <!-- Acá termina el footer -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+   <!-- Script para el efecto de cambio de color del navbar -->
+  <script>
+      $(window).scroll(function() {
+        if ($("#menu").offset().top > 56) {
+            $("#menu").addClass("bg-inverse");
+        } else {
+            $("#menu").removeClass("bg-inverse");
+        }
+      });
+  </script>
+  </body>
+</html>

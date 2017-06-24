@@ -1,0 +1,18 @@
+body{
+	font-family: verdana;
+}
+
+.img{
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+}
+
+.footer{
+	background: #AEB6BF;
+}
+
+.bg-content1{
+background: #5D6D7E;
+transition: all 1s ease;
+}

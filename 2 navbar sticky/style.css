@@ -1,0 +1,40 @@
+body{
+  background: #1C2833;
+}
+.slider{
+  height: 90vh;
+  background: url("img/ft1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.fondo1{
+  height: 60vh;
+  background: url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.fondo2{
+  background: #FFF;
+}
+.bg-content1{
+  background: #5D6D7E;
+  transition: all 1s ease;
+}
+.btnHover:hover{
+  cursor: pointer;
+}
+.btnHover1:hover{
+  cursor: pointer;
+  background: #1C2833;
+}
+.sticky-top2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 72px;
+  z-index: 1030;
+}
+.img{
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+}
